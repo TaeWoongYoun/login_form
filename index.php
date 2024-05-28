@@ -1,5 +1,5 @@
 <?php
-mysqli_connect('localhost', 'root', '', 'login')
+$conn = mysqli_connect('localhost', 'root', '', 'joinDB');
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -10,19 +10,15 @@ mysqli_connect('localhost', 'root', '', 'login')
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="login_wrap">
-    <div>
-        <h1>Login Form</h1>
-        <form action="login_ok.php" method="post" id="login_form">
-            <p><input type="text" name="userid" id="userid" placeholder="ID"></p>
-            <p><input type="password" name="userpw" id="userpw" placeholder="Password"></p>
-            <p class="forgetpw"><a href="changepw.php">Forget Password?</a></p>
-            <p><input type="submit" value="Login" class="login_btn"></p>
-        </form>
-        <p class="regist_btn">Not a member? &nbsp;<a href="regist.php">Sign Up</a></p>
-    </div>
-</div>
+    <button id="login">로그인</button>
+    <button id="join">회원가입</button>
 
+    <div class="login" id="loginModal">
+
+    </div>
+    <div class="join" id="joinModal">
+
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
