@@ -21,7 +21,8 @@ $conn = mysqli_connect('localhost', 'root', '', 'joinDB');
     <div class="join" id="joinModal">
         <h1>회원가입</h1>
         <form action="join.php" method="post" onsubmit="return sendit()  ">
-            <p><input type="text" name="join-id" id="join-id" placeholder="ID"></p>
+            <p><input type="text" name="join-id" id="join-id" placeholder="ID"><input type="button" id="idBtn" value="중복 확인" onclick="idBtn()"></p>
+            <p id="result" style="display: none;">&nbsp;</p>
             <p><input type="text" name="name" id="name" placeholder="Name(한글)"></p>
             <p><input type="password" name="join-pw" id="join-pw" placeholder="Password"></p>
             <p><input type="password" name="join-pw-check" id="join-pw-check" placeholder="Password Check"></p>
