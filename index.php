@@ -26,7 +26,7 @@ $conn = mysqli_connect('localhost', 'root', '', 'joinDB');
                 <input type="button" id="idBtn" value="중복 확인" onclick="checkID()">
             </p>
             <p id="result" style="display: none;">&nbsp;</p>
-            <p><input type="text" name="name" id="name" placeholder="Name(한글)"></p>
+            <p><input type="text" name="name" id="name" placeholder="Name"></p>
             <p><input type="password" name="join-pw" id="join-pw" placeholder="Password"></p>
             <p><input type="password" name="join-pw-check" id="join-pw-check" placeholder="Password Check"></p>
             <input type="hidden" name="pass" id="pass" value="0">

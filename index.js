@@ -61,7 +61,7 @@ const sendit= () => {
     }
 
     if(userpw.value.length < 4 || userpw.value.length > 20){
-        alert('비밀번호를 8자 이상 20자 이하로 입력해주세요.');
+        alert('비밀번호를 4자 이상 20자 이하로 입력해주세요.');
         userpw.focus();
         return false;
     }
