@@ -9,9 +9,10 @@
     // 올바른 SQL INSERT 구문을 작성합니다.
     $sql = "INSERT INTO infor (id, name, password) VALUES ('$userid', '$name', '$userpw')";
     mysqli_query($conn, $sql);
-?>
 
-<script>
-    alert("회원가입 완료")
-    location.href="index.php"
-</script>
+
+    echo "<script>
+            alert('회원가입 완료')
+            location.href='index.php?id=$name'
+        </script>"
+?>
