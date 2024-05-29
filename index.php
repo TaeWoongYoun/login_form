@@ -14,20 +14,22 @@ $conn = mysqli_connect('localhost', 'root', '', 'joinDB');
     <button id="join">회원가입</button>
 
     <div class="login" id="loginModal">
-        <h1>LOGIN</h1>
+        <h1>로그인</h1>
         <p><input type="text" name="login-id" id="login-pw" placeholder="id"></p>
         <p><input type="password" name="login-pw" id="login-pw" placeholder="password"></p>
     </div>
     <div class="join" id="joinModal">
-        <h1>JOIN</h1>
-        <p><input type="text" name="join-id" id="join-pw" placeholder="ID"></p>
-        <p><input type="text" name="name" id="name" placeholder="Name"></p>
-        <p><input type="password" name="join-pw" id="join-pw" placeholder="Password"></p>
-        <p><input type="password" name="join-pw-check" id="join-pw-check" placeholder="Password Check"></p>
-        <p>
-            <input type="submit" value="회원가입">
-            <input type="reset" value="취소">
-        </p>
+        <h1>회원가입</h1>
+        <form action="join.php" method="post" onsubmit="return sendit()  ">
+            <p><input type="text" name="join-id" id="join-id" placeholder="ID"></p>
+            <p><input type="text" name="name" id="name" placeholder="Name(한글)"></p>
+            <p><input type="password" name="join-pw" id="join-pw" placeholder="Password"></p>
+            <p><input type="password" name="join-pw-check" id="join-pw-check" placeholder="Password Check"></p>
+            <p>
+                <input type="submit" value="회원가입">
+                <input type="reset" value="취소">
+            </p>
+        </form>
     </div>
     <script src="index.js"></script>
 </body>
