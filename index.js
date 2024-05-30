@@ -2,13 +2,21 @@ let joinOpen = document.getElementById('join')
 let loginOpen = document.getElementById('login')
 let joinModal = document.getElementById('joinModal')
 let loginModal = document.getElementById('loginModal')
+let reset = document.getElementById('reset')
 
 joinOpen.addEventListener('click', function(){
     joinModal.style.display = 'block';
+    loginModal.style.display = 'none';
 })
 
 loginOpen.addEventListener('click', function(){
     loginModal.style.display = 'block';
+    joinModal.style.display = 'none';
+})
+
+reset.addEventListener('click', function(){
+    joinModal.style.display = 'none';
+    loginModal.style.display = 'none';
 })
 
 const sendit= () => {

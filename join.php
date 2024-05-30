@@ -13,6 +13,6 @@
 
     echo "<script>
             alert('회원가입 완료')
-            location.href='index.php?id=$name'
+            location.href='index.php'
         </script>"
 ?>

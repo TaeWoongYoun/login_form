@@ -32,7 +32,7 @@ $conn = mysqli_connect('localhost', 'root', '', 'joinDB');
             <input type="hidden" name="pass" id="pass" value="0">
             <p>
                 <input type="submit" value="회원가입">
-                <input type="reset" value="취소">
+                <input type="reset" value="취소" id="reset">
             </p>
         </form>
     </div>
